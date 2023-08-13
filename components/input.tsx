@@ -1,12 +1,29 @@
-const Input = () => {
+import React from 'react';
+
+interface InputProps {
+    id: string;
+    onChange: any;
+    value: string;
+    label: string;
+    type?: string;
+}
+
+const Input: React.FC<InputProps> = ({
+    id,
+    onChange,
+    value,
+    label,
+    type
+}) => {
     return (
         <div className="relative">
-            <input id="email" className="
+            <input onChange={onChange} type={type} value={value} id={id} className="
                 block
                 rounded-md
                 px-6
                 pt-2
                 pb-1
+                mb-5
                 w-full
                 text-md
                 text-white
@@ -15,7 +32,7 @@ const Input = () => {
                 focus:outline-none
                 focus:ring-0
                 peer
-            " placeholder="Email"></input>
+            " placeholder={label}></input>
         </div>
     )
 }
