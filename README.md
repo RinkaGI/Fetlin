@@ -4,4 +4,7 @@ pages:
 (nothing is finished)
 
 main ![Main page img](./mainroutescreenshot.png)
-auth ![Auth page img](./authroutescreenshot.png)
+
+AUTH SCREEN (2 screens, same route)
+register ![Register page img](./registerscreenshot.png)
+login ![Login page img](./loginscreenshot.png)
